@@ -1,0 +1,17 @@
+{
+  "name": "aup2aup2",
+  "module": "index.ts",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "bun build index.ts --outfile build/aup2aup2 --minify --compile",
+    "test": "bun test",
+    "dev": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
