@@ -1,2 +1,5 @@
-let Time = Date.now();
-console.log("Hello via Bun! " + Time);
+import fs from "fs";
+
+const MOCK_FILE = "./test/mock/mock.aup";
+
+console.log("Hello via Bun! " + fs.readFileSync(MOCK_FILE, "hex"));
